@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanshi | Portfolio</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f8fafc;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:70px;
+  background:white;
+}
+
+.hero h1{
+  font-size:44px;
+  margin-bottom:10px;
+}
+
+.hero span{color:#f59e0b;}
+
+.hero p{
+  font-size:18px;
+  color:#555;
+}
+
+.avatar{
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  background:#fde68a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.avatar img{width:200px}
+
+/* PROJECTS */
+.projects{
+  padding:60px;
+}
+
+.projects h2{
+  font-size:32px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<section class="hero">
+  <div>
+    <h1>Hi There,<br>I'm <span>Priyanshi</span></h1>
+    <p>Creative Designer & Intern<br>
+    Worked on branding, posters, and social media creatives</p>
+  </div>
+
+  <div class="avatar">
+    <img src="https://i.imgur.com/1X9QZQZ.png">
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+    <div class="card"><img src="Media (14).jpg"></div>
+    <div class="card"><img src="Media (13).jpg"></div>
+    <div class="card"><img src="Media (12).jpg"></div>
+    <div class="card"><img src="Media (11).jpg"></div>
+    <div class="card"><img src="Media (10).jpg"></div>
+    <div class="card"><img src="Media (9).jpg"></div>
+  </div>
+</section>
+
+</body>
+</html>
