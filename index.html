@@ -13,96 +13,174 @@ body{
   color:#333;
 }
 
-/* HERO */
-.hero{
+.container{
   display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:70px;
-  background:white;
+  min-height:100vh;
 }
 
-.hero h1{
-  font-size:44px;
+/* LEFT PANEL */
+.left{
+  width:30%;
+  background:#1f2a44;
+  color:white;
+  padding:30px;
+}
+
+.left img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:auto;
+}
+
+.left h3{
+  text-align:center;
+  margin-top:15px;
+}
+
+.left h4{
+  margin-top:25px;
+  border-bottom:1px solid #445;
+  padding-bottom:5px;
+}
+
+.skill{
   margin-bottom:10px;
 }
 
-.hero span{color:#f59e0b;}
-
-.hero p{
-  font-size:18px;
-  color:#555;
+.bar{
+  background:#445;
+  height:6px;
 }
 
-.avatar{
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  background:#fde68a;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.avatar img{width:200px}
-
-/* PROJECTS */
-.projects{
-  padding:60px;
-}
-
-.projects h2{
-  font-size:32px;
-  margin-bottom:30px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
+.fill{
+  height:6px;
   background:white;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card img{
+/* RIGHT PANEL */
+.right{
+  width:70%;
+  padding:40px;
+}
+
+.right h1{
+  margin-top:0;
+}
+
+.project{
+  margin-top:40px;
+}
+
+.project img{
   width:100%;
   border-radius:8px;
+  margin-top:15px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- INTRO -->
-<section class="hero">
-  <div>
-    <h1>Hi There,<br>I'm <span>Priyanshi</span></h1>
-    <p>Creative Designer & Intern<br>
-    Worked on branding, posters, and social media creatives</p>
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+    <img src="1.png">
+    <h3>PRIYANSHI YADAV</h3>
+
+    <h4>// CONTACT</h4>
+    <p>📞 6397115531</p>
+    <p>📧 priyanshi.khushi10@gmail.com</p>
+  
+
+    <h4>// SKILLS</h4>
+
+    <div class="skill">Professionalism</div>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+    <div class="skill">Teamwork</div>
+    <div class="bar"><div class="fill" style="width:85%"></div></div>
+
+    <div class="skill">Creativity</div>
+    <div class="bar"><div class="fill" style="width:75%"></div></div>
+
+    <div class="skill">Communication</div>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
   </div>
 
-  <div class="avatar">
-    <img src="https://i.imgur.com/1X9QZQZ.png">
-  </div>
-</section>
+  <!-- RIGHT -->
+  <div class="right">
 
-<!-- PROJECTS -->
-<section class="projects">
-  <h2>Projects</h2>
+    <h1>PRIYANSHI YADAV</h1>
+    <hr>
 
-  <div class="grid">
-    <div class="card"><img src="1.png"></div>
-    <div class="card"><img src="2.png"></div>
-    <div class="card"><img src="3.png"></div>
-    <div class="card"><img src="PRIVATE LIMITED.png"></div>
-    <div class="card"><img src="orporate type something.png"></div>
+    <h2>About Me</h2>
+    <p>
+      I am a BA 2<sup>nd</sup> year student pursuing English Honours, with a strong
+      interest in professional communication, branding, and creative design.
+      I recently completed a short-term internship at Aronofy Private Limited,
+      where I gained hands-on experience in corporate communication, visual
+      content creation, and brand presentation.
+    </p>
+    <p>
+      During the internship, I worked on marketing creatives, promotional posters,
+      and visual assets used for organizational branding and outreach. This
+      portfolio reflects my learning outcomes and professional growth.
+    </p>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Corporate Branding Creatives</h3>
+      <p>
+        Designed corporate branding visuals to maintain consistency across digital
+        platforms and improve brand identity.
+      </p>
+      <ul>
+        <li>Created professional layouts</li>
+        <li>Maintained brand colors and typography</li>
+        <li>Enhanced visual consistency</li>
+      </ul>
+      <p><b>Tools Used:</b> Canva</p>
+      <img src="2.png">
+    </div>
+
+    <div class="project">
+      <h3>Festive & New Year Campaign Designs</h3>
+      <p>
+        Developed festive creatives for New Year campaigns used in corporate
+        greetings and social media engagement.
+      </p>
+      <ul>
+        <li>Balanced creativity with professionalism</li>
+        <li>Designed audience-friendly visuals</li>
+        <li>Strengthened brand messaging</li>
+      </ul>
+      <p><b>Tools Used:</b> Canva</p>
+      <img src="3.png">
+    </div>
+
+    <div class="project">
+      <h3>Promotional & Informational Posters</h3>
+      <p>
+        Created posters highlighting company services such as leadership
+        development, skill training, and internship opportunities.
+      </p>
+      <ul>
+        <li>Structured information clearly</li>
+        <li>Used visual hierarchy effectively</li>
+        <li>Ensured corporate-ready presentation</li>
+      </ul>
+      <p><b>Tools Used:</b> Canva</p>
+      <img src="PRIVATE LIMITED.png">
+    </div>
+
   </div>
-</section>
+
+</div>
 
 </body>
 </html>
